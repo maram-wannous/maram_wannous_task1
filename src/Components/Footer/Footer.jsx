@@ -13,7 +13,7 @@ export default function Footer({serviceimg1, serviceimg2, serviceimg3, serviceim
         <section className="footer">
         <div className="container">
             <div className="box">
-              <h3>Travel</h3>
+              <h3>MARAM</h3>
               <ul className="social">
                 <li>
                   <a href="#" className="facebook">
