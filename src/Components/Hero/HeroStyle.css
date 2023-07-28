@@ -39,7 +39,8 @@
 @media (max-width: 768px) {
     .hero .info {
         width: 100%;
-        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .hero .info h1 {
         font-size: 1.5rem;
