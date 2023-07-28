@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/maram_wannous_task1/static/css/main.01617675.css",
+    "main.js": "/maram_wannous_task1/static/js/main.a046ae54.js",
+    "static/js/787.da383093.chunk.js": "/maram_wannous_task1/static/js/787.da383093.chunk.js",
+    "static/media/service1.jpg": "/maram_wannous_task1/static/media/service1.deb84255febf64e74578.jpg",
+    "static/media/hero.jpg": "/maram_wannous_task1/static/media/hero.46c122df4b084f8356b8.jpg",
+    "static/media/service6.jpg": "/maram_wannous_task1/static/media/service6.a270bf0a80c1681d64ba.jpg",
+    "static/media/service5.jpg": "/maram_wannous_task1/static/media/service5.17069ccd86cb49b8cd4f.jpg",
+    "static/media/service2.jpg": "/maram_wannous_task1/static/media/service2.80d469095a13d03cc224.jpg",
+    "static/media/service4.jpg": "/maram_wannous_task1/static/media/service4.9fb5082b222c91bb9c17.jpg",
+    "static/media/service3.jpg": "/maram_wannous_task1/static/media/service3.3e2a514f3cc4e796b33a.jpg",
+    "index.html": "/maram_wannous_task1/index.html",
+    "main.01617675.css.map": "/maram_wannous_task1/static/css/main.01617675.css.map",
+    "main.a046ae54.js.map": "/maram_wannous_task1/static/js/main.a046ae54.js.map",
+    "787.da383093.chunk.js.map": "/maram_wannous_task1/static/js/787.da383093.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01617675.css",
+    "static/js/main.a046ae54.js"
+  ]
+}
