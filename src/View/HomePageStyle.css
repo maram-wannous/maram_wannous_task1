@@ -1,0 +1,23 @@
+.services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    background-color: #f1f7f4;
+}
+.services .main-title h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--main-color);
+}
+.services .main-title p {
+    padding-bottom: 3rem;
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+@media (max-width: 992px) {
+    .services .main-title p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}

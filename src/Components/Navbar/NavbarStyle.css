@@ -1,0 +1,118 @@
+nav {
+    background-color: var(--section-color);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+nav .logo {
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 25px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .containt{
+    display: flex;
+}
+
+nav .nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav .nav-items a{
+    display: block;
+    padding: 0 30px;
+    color: var(--text-color);
+    font-size: 18px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+nav .nav-items a:hover{
+    color: var(--main-color);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+nav .containt .btn {
+    font-size: 14px;
+}
+
+.menu-icon {
+    color: var(--main-color);
+    font-size: 22px;
+    cursor: pointer;
+
+}
+@media (min-width: 768px){
+    .menu-icon {
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    nav .containt {
+        position: absolute;
+        width: 250px;
+        top: 3rem;
+        right: 4rem;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        transition: all .5s ease-in;
+        -webkit-transition: all .5s ease-in;
+        -moz-transition: all .5s ease-in;
+        -ms-transition: all .5s ease-in;
+        -o-transition: all .5s ease-in;
+}
+    nav .containt .nav-items {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    nav .nav-items a {
+        text-align: start;
+        padding-left: 0;
+    }
+    .menu-icon {
+        display: inline-block;
+        transition: var(--main-transition);
+    }
+    nav {
+        width: calc(100% - 30px);
+    }
+}
