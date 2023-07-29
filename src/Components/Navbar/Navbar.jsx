@@ -2,7 +2,7 @@ import {FaBars} from 'react-icons/fa';
 import './NavbarStyle.css';
 import { useEffect, useRef, useState } from 'react';
 
-export default function Navbar({logo, list, button}) {
+export default function Navbar({logo, navmenu, button}) {
   const [menuOpened, setMenuOpened] = useState(false);
   let menuRef = useRef();
 
@@ -41,10 +41,8 @@ export default function Navbar({logo, list, button}) {
           </div>
             <div className='containt' style={getMenuStyl(menuOpened)} >
                 <ul className="nav-items">
-                    <li><a href="#">{list[0]}</a></li>
-                    <li><a href="#">{list[1]}</a></li>
-                    <li><a href="#">{list[2]}</a></li>
-                    <li><a href="#">{list[3]}</a></li>
+                    {navmenu.map((e) => <li><a href="#">{e}</a></li>
+                    )}
                 </ul>
                 <button className='btn'>{button}</button>
             </div>

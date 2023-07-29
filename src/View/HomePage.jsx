@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Header from "../Components/Header/Header";
 import ServicesContainer from "../Components/ServicesContainer/ServicesContainer";
 import './HomePageStyle.css';
@@ -11,9 +11,30 @@ import service6 from '../assets/service6.jpg';
 import GetStarted from "../Components/GetStarted/GetStarted";
 import Footer from "../Components/Footer/Footer";
 
+
 export default function HomePage() {
 
-    const [desc] = useState("Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis doloribus eligendi assumenda veniam deserunt, mollitia laborum dicta dolores, pariatur vel, iste explicabo quam magni. Officiis mollitia dolorum assumenda delectus!")
+    const servicList =[
+            {
+                titleOfServic : "your title here",
+                desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis doloribus eligendi assumenda veniam deserunt, mollitia laborum dicta dolores, pariatur vel, iste explicabo quam magni. Officiis mollitia dolorum assumenda delectus!",
+                img : service1,
+                rowrevers : false,
+            },
+            {
+                titleOfServic : "your title here",
+                desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis doloribus eligendi assumenda veniam deserunt, mollitia laborum dicta dolores, pariatur vel, iste explicabo quam magni. Officiis mollitia dolorum assumenda delectus!",
+                img : service2,
+                rowrevers : true,
+            },
+            {
+                titleOfServic : "your title here",
+                desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis doloribus eligendi assumenda veniam deserunt, mollitia laborum dicta dolores, pariatur vel, iste explicabo quam magni. Officiis mollitia dolorum assumenda delectus!",
+                img : service3,
+                rowrevers : false,
+            }
+        ];
+        console.log(servicList);
 
     return (
         <div>
@@ -24,19 +45,14 @@ export default function HomePage() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, rerum</p>
                 </div>
                 <div className="container">
-                <ServicesContainer serviceimg ={service1}
-                                    title="your title here"
-                                    desc= {desc}
-                />
-                <ServicesContainer serviceimg ={service2} 
-                                    title="your title here"
-                                    desc= {desc}
-                                    rowrevers= {true}
-                />
-                <ServicesContainer serviceimg ={service3}
-                                    title="your title here"
-                                    desc= {desc}
-                />
+                    {servicList.map((item) => 
+                        <ServicesContainer 
+                            title={item.titleOfServic}
+                            desc= {item.desc}
+                            serviceimg ={item.img}
+                            rowrevers= {item.rowrevers}
+                        />
+                    )}
                 <GetStarted firstp="Lorem ipsum dolor sit amet consectetur adipisicing elit."
                             secondp="Start Your Free Trail"
                             button="Get Started"
