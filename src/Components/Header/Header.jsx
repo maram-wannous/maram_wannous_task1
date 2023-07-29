@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Header() {
 
+    const [navmenu] = useState(["Home", "Services", "About", "contact"]);
     const [herop1] = useState("The Modern Landing Page For");
     const [herop2] = useState("React Developer");
     const [herop3] = useState("The easiest way to build react landing page in seconds");
@@ -13,7 +14,7 @@ export default function Header() {
     return (
         <div>
             <Navbar logo="MARAM"
-                    list={["Home", "Services", "About", "contact"]}
+                    navmenu={navmenu}
                     button="Sign in"
             />
             <Hero heroimg={hero}
