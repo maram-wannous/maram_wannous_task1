@@ -1,6 +1,6 @@
 import './ServicesContainerStyle.css';
 
-export default function ServicesContainer ({serviceimg, title , desc, rowrevers}) {
+export default function ServicesContainer ({title, desc, serviceimg, rowrevers}) {
     return (
         <div className= {(rowrevers) ? "service reverse" : "service"}>
             <div className="info">
