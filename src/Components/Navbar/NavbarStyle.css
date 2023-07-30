@@ -96,6 +96,24 @@ nav .containt .btn {
         -moz-transition: all .5s ease-in;
         -ms-transition: all .5s ease-in;
         -o-transition: all .5s ease-in;
+    }
+    nav .containt.active {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+          -webkit-transform: translateY(0);
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -o-transform: translateY(0);
+    }
+    nav .containt.inactive {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
 }
     nav .containt .nav-items {
         flex-direction: column;

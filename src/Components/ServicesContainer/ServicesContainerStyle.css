@@ -49,6 +49,7 @@
 }
 .service .box .image:hover::before {
     animation: flashing 0.7s;
+    -webkit-animation: flashing 0.7s;
 }
 .service .box .image img {
     width: 100%;

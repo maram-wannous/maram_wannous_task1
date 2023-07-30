@@ -75,7 +75,7 @@ export default function Footer({serviceimg1, serviceimg2, serviceimg3, serviceim
               <img src={serviceimg6} alt="" />
             </div>
         </div>
-        <p className="copyright">Made With &lt;3 By <span>Maram</span></p>
+        <p className="copyright">Made With &t;3 By <span>Maram</span></p>
     </section>
 
 
