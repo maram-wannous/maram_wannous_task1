@@ -4,11 +4,11 @@ export default function GetStarted({firstp, secondp, button}) {
     return(
         <div className='get-start'>
             <div className="container">
-                <div className='text'>
+                <div className='text' data-aos="fade-right">
                     <p>{firstp}</p>
                     <span>{secondp}</span>
                 </div>
-                <button className='btn'>{button}</button>
+                <button className='btn' data-aos="fade-left">{button}</button>
             </div>
         </div>
     );

@@ -6,8 +6,7 @@
 .hero img {
     height: 100%;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
 }
 .hero .info {
     gap: 1rem;
